@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.amason.sunny.ui.screens.SplashScreenUI
+import com.amason.sunny.ui.theme.PrimaryBackground
 import com.amason.sunny.ui.theme.SunnyTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,24 +22,11 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = PrimaryBackground
                 ) {
-                    Greeting("Android")
+                    SplashScreenUI()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    SunnyTheme {
-        Greeting("Android")
     }
 }
