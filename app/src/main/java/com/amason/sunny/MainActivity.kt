@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.amason.sunny.ui.screens.HomeScreenUI
 import com.amason.sunny.ui.screens.SplashScreenUI
 import com.amason.sunny.ui.theme.PrimaryBackground
 import com.amason.sunny.ui.theme.SunnyTheme
@@ -24,7 +25,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = PrimaryBackground
                 ) {
-                    SplashScreenUI()
+//                    SplashScreenUI()
+                    HomeScreenUI()
                 }
             }
         }
